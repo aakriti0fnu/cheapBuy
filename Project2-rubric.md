@@ -1,6 +1,6 @@
-|Self Assessment Score|Notes| Evidence|
-|-|-----|---------|
-|2| short release cycles|https://github.com/aakriti0fnu/cheapBuy/graphs/contributors|
+|Scores|Notes|Self Assessment| Evidence|
+|-|-----|--|---------|
+|.5| short release cycles|.5|https://github.com/aakriti0fnu/cheapBuy/graphs/contributors|
 |2| workload is spread over the whole team (so one team member is often Xtimes more productive than the others)|evidence in GH|
 |3| Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing |[README.md](https://github.com/aakriti0fnu/cheapBuy/blob/main/README.md)|
 |3|the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up  |[CONTRIBUTING.md](https://github.com/aakriti0fnu/cheapBuy/blob/main/CONTRIBUTING.md)|
