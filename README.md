@@ -65,12 +65,15 @@
 </p>
 
 ----
-## 🚀 Demo 
+## 🚀 Quick look 
 
 [![cheapBuy Extension](https://img.youtube.com/vi/Rd5pno8FuD4/0.jpg)](https://www.youtube.com/watch?v=Rd5pno8FuD4)
 ## 🧐 Features
 - **Price Comparison**
 - **Get alternative website for the product**
+
+### Demo video
+- **[Click here](https://www.loom.com/share/c801360be3684bc19cba713445a9a4e3)**
 
 
 ## 🛠️ Installation Steps
@@ -134,7 +137,7 @@
 <li> Improvement of extension UI. </li>
 <li> Alternate product suggestion feature. </li>
 <li> Improve accuracy of the product. Example : If user's current tab is having Television of a particular brand and there is a better option available at a cheaper or comparable rate than provide alternative product accordingly. </li>
-<li> Add web scrapping for other websites such as Walmart, Bjs, Costco, etc. </li>
+<li> Add web scrapping for other websites such as Bjs, Costco, etc. </li>
 <li> Improve code execution speed using multithreading. </li>
 <li> Show a avialable coupon on other shopping website. </li>
 </ul>
@@ -144,6 +147,7 @@
 <summary>PHASE-3 :</summary>
 <br>
 <ul>
+<li> Add scrapper for walmart
 <li> Automatic deployment of server using Teraform or ansible. </li>
 <li> Develop a website instead of extension. </li>
 <li> Dashboard including how many user's click on the website. </li>
@@ -158,9 +162,6 @@ Please contribute using [GitHub Flow](https://guides.github.com/introduction/flo
 
 Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 
-## Contributors
+## Contributor
 
 - [Aakriti](https://github.com/aakriti0fnu)
-- [AshwinKumarMuniswamy](https://github.com/AshwinKumarMuniswamy)
-- [Jainam Shah](https://github.com/j-08-shah)
-- [Sharath Kumar](https://github.com/sharathKV)
