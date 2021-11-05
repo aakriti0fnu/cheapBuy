@@ -67,7 +67,7 @@
 ----
 ## 🚀 Demo 
 
-[![cheapBuy Extension](https://youtu.be/Qnri93RAxII)
+[![cheapBuy Extension](https://www.youtube.com/watch?v=Qnri93RAxII)
 ## 🧐 Features
 - **Price Comparison**
 - **Get alternative website for the product**
