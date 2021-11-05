@@ -1,8 +1,9 @@
 def description_from_url_bjs(link):
     """
-
+This is a function to take the user product URL as a link and return the description of the user product
     :param link:
-    :return:
+    :return:Search term/description
+
     """
     description = ""
     try:

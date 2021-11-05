@@ -12,8 +12,10 @@ api = Api(app)
 class Scrap(Resource):
     def post(self):
         """
+        Accepts user's requests from popup.js extension and returns the main result dictionary with enties for the items found on different scraped sites.
+        The main result dictionary will be read and rendered on the extension.
 
-        :return:
+        :return results: main result dictionary with 200| "" with 404 | custom message with 404.
         """
         parser = reqparse.RequestParser()
         parser.add_argument("link", required=True)
@@ -21,6 +23,7 @@ class Scrap(Resource):
         args = parser.parse_args()
         print(">>>" * 5)
         results = scraper(args["link"])
+
         if results == "":
             print("Failed to find the item")
             return results, 404
@@ -37,6 +40,7 @@ class Scrap(Resource):
 						Sorry for any inconvinience \n"
             )
             return results, 404
+        if results:
             print(json.dumps(results, indent=4, sort_keys=True))
             return results, 200
 
@@ -45,4 +49,5 @@ class Scrap(Resource):
 
 api.add_resource(Scrap, "/scrap")
 if __name__ == "__main__":
+
     app.run(debug=True, port=8080, host="0.0.0.0")  # run our Flask app

@@ -2,11 +2,15 @@ from bs4 import BeautifulSoup
 
 
 def get_url_walmart(search_term):
-    """
+    '''
+    Take the user's product description
+        return the constructed Amazon product url.
 
-    :param search_term:
-    :return:
-    """
+    :param search_term:product description
+    :return url:specific product URL
+
+    '''
+   
     template = "https://www.walmart.com/search?q={}"
     search_term = search_term.replace(" ", "+")
     url = template.format(search_term)
@@ -16,14 +20,23 @@ def get_url_walmart(search_term):
 
 def scrap_walmart(driver, search_term):
     """
+    Take the web driver and search_term(user product description)
+        scrap the Amazon product page and return the list of item found.
 
-    :param driver:
-    :param search_term:
-    :return:
+
+    :param driver: instance of webdriver
+    :param search_term: product description
+    :return results: list of items found
+
     """
     url = get_url_walmart(search_term)
     driver.get(url)
     soup = BeautifulSoup(driver.page_source, "html.parser")
+    with open(
+        "/Users/anubhavchaudhary/Downloads/github/repos/cheapBuy/data/walmart.html", "w"
+    ) as fileptr:
+        fileptr.write(str(soup))
+
     results = soup.find_all(
         "div",
         {
@@ -36,10 +49,13 @@ def scrap_walmart(driver, search_term):
 
 def extract_item_walmart(driver, search_term):
     """
+    Take the web driver and search_term(user product description)
+        scrap the Amazon product page and return the list of item found.
 
-    :param driver:
-    :param search_term:
-    :return:
+    :param driver:instance of webdriver
+    :param search_term:product description
+    :return result:product details dictionary
+
     """
     result = {}
     try:
@@ -67,3 +83,4 @@ def extract_item_walmart(driver, search_term):
         print("Scraping failed for Ebay")
         result = {}
     return result
+

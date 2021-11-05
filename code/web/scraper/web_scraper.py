@@ -18,7 +18,9 @@ from .scrap.costco import extract_item_costco
 
 def get_driver():
     """
-    :return:  instance of Chrome WebDriver.
+    This function provides the instance of a chrome and firefox driver to get the request
+
+    :return:  instance of Chrome and firefoxWebDriver.
     """
     # Chrome
     option = webdriver.ChromeOptions()
@@ -48,19 +50,15 @@ def get_driver():
     return chrome_browser, firefox_browser
 
 
-def get_agent():
-    agent = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-    }
-    return agent
 
 
 def set_results(to, from_):
     """
-    sets the main results dict.
-    :param to:
-    :param from_:
-    :return:
+    sets the main result dictionary from the child result dictionary(results from each scraped site.)
+
+    :param to: main dictionary
+    :param from_: child dictionary
+    :return: None
     """
     to["url"].append(from_["url"])
     to["description"].append(from_["description"])
@@ -70,11 +68,12 @@ def set_results(to, from_):
 
 def search_amazon(driver, description, results):
     """
+    Get the details of 1st picked item(in child dictionary)
 
-    :param driver:
-    :param description:
-    :param results:
-    :return:
+    :param driver: instance of Chrome WebDriver
+    :param description: search term/ product description.
+    :param results: refernce to set_results(to)
+    :return: None
     """
     result_dict_amazon = extract_item_amazon(driver, description)
     if result_dict_amazon != {}:
@@ -85,11 +84,12 @@ def search_amazon(driver, description, results):
 
 def search_bjs(driver, description, results):
     """
+    Get the details of 1st picked item(in child dictionary)
 
-    :param driver:
-    :param description:
-    :param results:
-    :return:
+    :param driver: instance of Chrome WebDriver
+    :param description: search term/ product description
+    :param results: reference to set_results(to)
+    :return: None
     """
     print("`" * 20)
     result_dict_bjs = extract_item_bjs(driver, description)
@@ -101,11 +101,12 @@ def search_bjs(driver, description, results):
 
 def search_walmart(driver, description, results):
     """
+    Get the details of 1st picked item(in child dictionary)
 
-    :param driver:
-    :param description:
-    :param results:
-    :return:
+    :param driver:instance of Chrome WebDriver
+    :param description:search term/ product decription
+    :param results: refernce to set_results(to)
+    :return: None
     """
     print("`" * 20)
     result_dict_walmart = extract_item_walmart(driver, description)
@@ -117,11 +118,12 @@ def search_walmart(driver, description, results):
 
 def search_costco(driver, description, results):
     """
+    Get the details of 1st picked item(in child dictionary)
 
-    :param driver:
-    :param description:
-    :param results:
-    :return:
+    :param driver:instance of Chrome WebDriver
+    :param description:search term/ product decription
+    :param results: refernce to set_results(to)
+    :return: None
     """
     print("`" * 20)
     result_dict_costco = extract_item_costco(driver, description)
@@ -133,11 +135,12 @@ def search_costco(driver, description, results):
 
 def search_ebay(driver, description, results):
     """
+    Get the details of 1st picked item(in child dictionary)
 
-    :param driver:
-    :param description:
-    :param results:
-    :return:
+    :param driver:instance of Chrome WebDriver
+    :param description:search term/ product decription
+    :param results: refernce to set_results(to)
+    :return: None
     """
     print("`" * 20)
     result_dict_ebay = extract_item_ebay(driver, description)
@@ -149,9 +152,12 @@ def search_ebay(driver, description, results):
 
 def scraper(link):
     """
+    takes the user product URL,
+        looks for the the website in the URL, extract the description from it, and
+            scrap the other sites, finally return the main result dictionary with product details of each scrapped site.
 
-    :param link:
-    :return:
+    :param link: user product url
+    :return results: main result dictionary.
     """
     print("\n \t\t\t\t\t\t\t ****** User request Started.******\n")
 
