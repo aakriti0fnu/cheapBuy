@@ -1,10 +1,11 @@
 # import requests
-
-
+#
+#
 # def test_post_result():
 #     """
-#     Need to run the server code before running this test case.
-#     - This test can be tested locally, but can't be tested on TravisCI or githubActions since the server is not running on remote VM.
+#     Need to run the server code before running this test-case.
+#         - This test can be tested locally, but can't be tested on TravisCI or githubActions since the server is not running on a remote VM. Previously, the repo owner has hosted the server on AWS IP: '3.89.74.154', but it no longer working.
+#
 #     :return:
 #     """
 #     server = "0.0.0.0"  # '3.89.74.154'
