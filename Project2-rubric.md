@@ -19,7 +19,7 @@
 |.5|Use of code coverage |.5|[code coverage](https://github.com/aakriti0fnu/cheapBuy/blob/main/.github/workflows/lint_test_cov.yml)|
 |.5|other automated analysis tools |.5|[automated test suite](https://github.com/aakriti0fnu/cheapBuy/blob/main/.github/workflows/lint_test_cov.yml)|
 |.5|test cases:.a large proportion of the issues related to handling failing cases |.5|Each test accounts for failing scenarios|
-|.5|test cases are routinely executed |on push or pull requests, tests are run |.5|in GH|
+|.5|test cases are routinely executed |.5|on push or pull requests, tests are run |
 |1|Documentation describing how this version improves on the older version|.5|[Documentation]()|
 |3|This version is a little(1), some(2), much(3) improved on the last version.|Tutor's assessment.| 
 |16| Total|
