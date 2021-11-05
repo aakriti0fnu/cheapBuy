@@ -2,15 +2,15 @@ from bs4 import BeautifulSoup
 
 
 def get_url_walmart(search_term):
-    '''
+    """
     Take the user's product description
         return the constructed Amazon product url.
 
     :param search_term:product description
     :return url:specific product URL
 
-    '''
-   
+    """
+
     template = "https://www.walmart.com/search?q={}"
     search_term = search_term.replace(" ", "+")
     url = template.format(search_term)
@@ -83,4 +83,3 @@ def extract_item_walmart(driver, search_term):
         print("Scraping failed for Ebay")
         result = {}
     return result
-

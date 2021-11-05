@@ -50,8 +50,6 @@ def get_driver():
     return chrome_browser, firefox_browser
 
 
-
-
 def set_results(to, from_):
     """
     sets the main result dictionary from the child result dictionary(results from each scraped site.)

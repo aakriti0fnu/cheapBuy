@@ -4,12 +4,13 @@ from ...code.web.scraper.fetch_description.bjs import description_from_url_bjs
 User is on Bjs!
 """
 
+
 def test_fetch_description_bjs1():
-    '''
+    """
     tests whether the description string extraction from a user product URL is working okay.
-    
+
     :return: None
-    '''
+    """
     link = "https://www.bjs.com/product/apple-ipad-pro-11-3rd-generation-256gb-wi-fi---space-gray/3000000000001510763"
     assert (
         description_from_url_bjs(link)
@@ -18,11 +19,11 @@ def test_fetch_description_bjs1():
 
 
 def test_fetch_description_bjs2():
-    '''
+    """
     tests whether the description string extraction from a user product URL is working okay.
-    
+
     :return: None
-    '''
+    """
     link = "https://www.bjs.com/product/brita-pour-through-pitcher-replacement-filter-10-pk/23578"
     description = description_from_url_bjs(link)
     assert description == "brita pour through pitcher replacement filter 10 pk"

@@ -1,19 +1,21 @@
 from bs4 import BeautifulSoup
 
+
 def get_url_costco(search_term):
-    '''
+    """
     Take the user's product description
         return the constructed Amazon product url.
 
     :param search_term:product description
     :return url:specific product URL
-    '''
+    """
     domain_name = "https://www.costco.com/"
     amended_search_term = search_term.replace(" ", "%20")
 
     url = f"{domain_name}/CatalogSearch?dept=All&keyword={amended_search_term}"
     print(f"Constructed Costco's URL: \n {url}")
     return url
+
 
 def scrap_costco(driver, search_term):
     """
@@ -30,13 +32,17 @@ def scrap_costco(driver, search_term):
         url = get_url_costco(search_term)
         driver.get(url)
         soup = BeautifulSoup(driver.page_source, "html.parser")
-        with open("/Users/anubhavchaudhary/Downloads/github/repos/cheapBuy/data/costco.html","w" ) as fileptr:
+        with open(
+            "/Users/anubhavchaudhary/Downloads/github/repos/cheapBuy/data/costco.html",
+            "w",
+        ) as fileptr:
             fileptr.write(str(soup))
         results = soup.find_all("div", {"class": "product-tile-set"})
 
     except:
         results = []
     return results
+
 
 def extract_item_costco(driver, search_term):
     """

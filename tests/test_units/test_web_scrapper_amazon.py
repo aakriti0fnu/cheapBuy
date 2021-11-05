@@ -5,13 +5,14 @@ from tests import setup_get_driver_details
 Tests individual scraping functions of Amazon!
 """
 
+
 def test_get_url_amazon_1():
-    '''
+    """
     For a given product/item description
         tests whether the url building happens correctly.
 
     :return: None
-    '''
+    """
     item_name = "2021 Apple 10 2 inch iPad Wi Fi"
     search_term = item_name.replace(" ", "+")
     assert (
@@ -21,12 +22,12 @@ def test_get_url_amazon_1():
 
 
 def test_get_url_amazon_2():
-    '''
+    """
     For a given product/item description
         tests whether the url building happens correctly.
 
     :return: None
-    '''
+    """
     item_name = "Brita Longlast Replacement Filters Dispensers"
 
     search_term = item_name.replace(" ", "+")
@@ -37,12 +38,12 @@ def test_get_url_amazon_2():
 
 
 def test_scrap_amazon():
-    '''
+    """
     For a given product/item description
         tests whether the returned list has at least 1 item found from the scraped site :Amazon
 
     :return: None
-    '''
+    """
     item_name = "W. Trends Sunset Twin-Size Metal Bunk Bed - Black"
     results = scrap_amazon(setup_get_driver_details(), item_name)
     assert results is not None

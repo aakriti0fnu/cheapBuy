@@ -2,15 +2,15 @@ from bs4 import BeautifulSoup
 
 
 def get_url_ebay(search_term):
-    '''
+    """
     Take the user's product description
         return the constructed Amazon product url.
-     
+
     :param search_term:product description
     :return url:specific product URL
 
-    '''
-   
+    """
+
     domain_name = "https://www.ebay.com"
     amended_search_term = search_term.replace("%20", " ")
     url = f"{domain_name}/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={amended_search_term}"

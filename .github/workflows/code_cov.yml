@@ -21,6 +21,8 @@ jobs:
         pip install pytest-cov
         pip install -r requirements.txt
     - name: Run the tests
-      run: pytest --cov=./
+      run: |
+        pytest --cov=./tests/test_end_to_end
+        pytest --cov=./tests/test_units
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v2
