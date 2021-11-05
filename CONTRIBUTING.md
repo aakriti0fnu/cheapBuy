@@ -35,7 +35,9 @@ Also strictly follow our table of contents and make the required changes accordi
 
 - LICENSE
 
-- Project2-rubric.md
+- docs
+    Improvements.md
+    Project2-Rubric.md
 
 - README.md
 
