@@ -130,13 +130,11 @@
 <summary>PHASE-2 :</summary>
 <br>
 <ul>
-<li> Add a badge on the user's current tab. </li>
-<li> Improvement of extension UI. </li>
-<li> Alternate product suggestion feature. </li>
-<li> Improve accuracy of the product. Example : If user's current tab is having Television of a particular brand and there is a better option available at a cheaper or comparable rate than provide alternative product accordingly. </li>
-<li> Add web scrapping for other websites such as Walmart, Bjs, Costco, etc. </li>
-<li> Improve code execution speed using multithreading. </li>
-<li> Show a avialable coupon on other shopping website. </li>
+<li> Improved the speed of execution of the code. </li>
+<li> Fetched the best rates at which a product is available on eBay and Amazon. </li>
+<li> Added a badge at the icon where user can see the the alternate product price. </li>
+<li> Improvep code execution speed using multithreading. </li>
+
 </ul>
 </details>
 
@@ -144,6 +142,9 @@
 <summary>PHASE-3 :</summary>
 <br>
 <ul>
+  <li> Improvement of extension UI. </li>
+ <li> Improve accuracy of the product. Example : If user's current tab is having Television of a particular brand and there is a better option available at a cheaper or comparable rate than provide alternative product accordingly. </li>
+<li> Show a avialable coupon on other shopping website. </li>
 <li> Automatic deployment of server using Teraform or ansible. </li>
 <li> Develop a website instead of extension. </li>
 <li> Dashboard including how many user's click on the website. </li>
