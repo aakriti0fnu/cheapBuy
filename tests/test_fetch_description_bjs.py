@@ -1,4 +1,4 @@
-from ...code.web.scraper.fetch_description.bjs import description_from_url_bjs
+from ..code.web.scraper.fetch_description.bjs import description_from_url_bjs
 
 """
 User is on Bjs!

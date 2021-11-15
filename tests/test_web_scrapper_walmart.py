@@ -1,4 +1,4 @@
-from ...code.web.scraper.scrap.walmart import get_url_walmart, scrap_walmart
+from ..code.web.scraper.scrap.walmart import get_url_walmart, scrap_walmart
 from tests import setup_get_driver_details
 
 """

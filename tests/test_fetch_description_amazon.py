@@ -1,4 +1,4 @@
-from ...code.web.scraper.fetch_description.amazon import description_from_url_amazon
+from ..code.web.scraper.fetch_description.amazon import description_from_url_amazon
 
 """
 User is on Amazon!

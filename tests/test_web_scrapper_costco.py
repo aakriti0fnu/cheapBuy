@@ -1,4 +1,4 @@
-from ...code.web.scraper.scrap.costco import get_url_costco, scrap_costco
+from ..code.web.scraper.scrap.costco import get_url_costco, scrap_costco
 from tests import setup_get_driver_details
 
 """

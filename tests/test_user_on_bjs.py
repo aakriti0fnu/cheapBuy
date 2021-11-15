@@ -1,4 +1,4 @@
-from ...code.web.scraper.web_scraper import scraper
+from ..code.web.scraper.web_scraper import scraper
 
 """
 User is on Bjs!

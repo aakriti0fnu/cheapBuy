@@ -1,4 +1,4 @@
-from ...code.web.scraper.scrap.ebay import get_url_ebay, scrap_ebay, extract_item_ebay
+from ..code.web.scraper.scrap.ebay import get_url_ebay, scrap_ebay, extract_item_ebay
 from tests import setup_get_driver_details
 
 """

@@ -1,4 +1,4 @@
-from ...code.web.scraper.scrap.amazon import get_url_amazon, scrap_amazon
+from ..code.web.scraper.scrap.amazon import get_url_amazon, scrap_amazon
 from tests import setup_get_driver_details
 
 """

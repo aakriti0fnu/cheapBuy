@@ -1,4 +1,4 @@
-from ...code.web.scraper.fetch_description.walmart import description_from_url_walmart
+from ..code.web.scraper.fetch_description.walmart import description_from_url_walmart
 
 """
 User is on Walmart!

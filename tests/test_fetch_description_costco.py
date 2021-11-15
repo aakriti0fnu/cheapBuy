@@ -1,4 +1,4 @@
-from ...code.web.scraper.fetch_description.costco import description_from_url_costco
+from ..code.web.scraper.fetch_description.costco import description_from_url_costco
 
 """
 User is on Costco!
