@@ -22,7 +22,6 @@ jobs:
         pip install -r requirements.txt
     - name: Run the tests
       run: |
-        pytest --cov=./tests/test_end_to_end
-        pytest --cov=./tests/test_units
+        pytest --cov=./tests
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v2
