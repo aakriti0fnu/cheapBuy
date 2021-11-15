@@ -13,10 +13,10 @@
 |Number of commits: by different people| .5|Team of 1(https://github.com/aakriti0fnu/cheapBuy/graphs/contributors)|
 |issues are being closed| 1| https://github.com/aakriti0fnu/cheapBuy/issues?q=is%3Aissue+is%3Aclosed|
 |issues are discussed before they are closed|.5 |The issue is tied to a PR and closed when merged.|
-| Use of syntax checkers.|.4 |black and flake8 |
+| Use of syntax checkers.|.5 |flake8 and black |
 |Issues reports: there are many |1| https://github.com/aakriti0fnu/cheapBuy/issues|
-|Use of code formatters. | .4| https://github.com/aakriti0fnu/cheapBuy/blob/dev_aakriti/.github/workflows/code_formatter.yml|
-|Use of style checkers| .4 | https://github.com/aakriti0fnu/cheapBuy/blob/dev_aakriti/.github/workflows/style_checker.yml |
+|Use of code formatters. | .5| https://github.com/aakriti0fnu/cheapBuy/blob/dev_aakriti/.github/workflows/code_formatter.yml|
+|Use of style checkers| .5 | https://github.com/aakriti0fnu/cheapBuy/blob/dev_aakriti/.github/workflows/style_checker.yml |
 | Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.| .5|https://www.youtube.com/watch?v=Rd5pno8FuD4|
 |test cases exist| .5| https://github.com/aakriti0fnu/cheapBuy/tree/dev_aakriti/tests|
 |Use of code coverage| .5 | https://github.com/aakriti0fnu/cheapBuy/tree/dev_aakriti/.github/workflows|
