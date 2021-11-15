@@ -1,5 +1,5 @@
 from ..code.web.scraper.scrap.bjs import get_url_bjs, scrap_bjs
-from tests import setup_get_driver_details
+from . import setup_get_driver_details
 
 """
 Tests individual scraping functions of Bjs!

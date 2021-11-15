@@ -1,5 +1,5 @@
 from ..code.web.scraper.scrap.amazon import get_url_amazon, scrap_amazon
-from tests import setup_get_driver_details
+from . import setup_get_driver_details
 
 """
 Tests individual scraping functions of Amazon!

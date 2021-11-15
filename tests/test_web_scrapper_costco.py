@@ -1,5 +1,5 @@
 from ..code.web.scraper.scrap.costco import get_url_costco, scrap_costco
-from tests import setup_get_driver_details
+from . import setup_get_driver_details
 
 """
 Tests individual scraping functions of Costco!
